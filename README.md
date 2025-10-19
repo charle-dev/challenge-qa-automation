@@ -19,25 +19,6 @@ Arquitetura de testes:
 - **DriverFactory** com `ThreadLocal<WebDriver>` (suporte a paralelismo futuro).
 
 
-## 🗂️ Estrutura relevante
-
-accenture-qa-automation-fixed-v15/
-└── accenture-qa-automation/
-    ├── pom.xml
-    ├── src/
-    │   └── test/
-    │       ├── java/com/accenture/challenge/
-    │       │   ├── RunCucumberTest.java      # <— NOVO runner JUnit Platform
-    │       │   ├── CucumberCli.java          # runner via main class (IDE/Debug)
-    │       │   ├── DriverFactory.java
-    │       │   ├── Ui.java
-    │       │   ├── pages/…
-    │       │   └── steps/…
-    │       └── resources/features/
-    │           └── ui/*.feature              # cenários @ui
-    └── target/cucumber-report.html           # relatório HTML gerado
-
-
 ## ✅ Pré-requisitos
 
 - **Java 21** (`java -version` → 21.x)
