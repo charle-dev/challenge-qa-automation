@@ -25,7 +25,7 @@ public class Ui {
 
     public static WebDriverWait shortWait(WebDriver d) {
         WebDriverWait w = new WebDriverWait(d, Duration.ofSeconds(20));
-        w.pollingEvery(java.time.Duration.ofMillis(30));
+        w.pollingEvery(java.time.Duration.ofMillis(1));
         return w;
     }
 
